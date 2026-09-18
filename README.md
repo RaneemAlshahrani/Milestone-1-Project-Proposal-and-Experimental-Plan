@@ -47,7 +47,7 @@ The single validation metric is rare-class macro-F1:
 
 ```text
 (F1 vascular lesions + F1 dermatofibroma) / 2
-````
+```
 
 This metric gives equal importance to the two rarest classes.
 
