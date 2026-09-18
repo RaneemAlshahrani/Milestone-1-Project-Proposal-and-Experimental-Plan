@@ -21,4 +21,40 @@ The project uses the HAM10000 dataset.
 - License: CC BY-NC-SA 4.0
 - Use: Non-commercial use only
 
-The dataset is downloaded automatically in the notebook using KaggleHub. The dataset files are not included in this repository.
+The dataset images are not included in this repository. They are downloaded automatically in the notebook using KaggleHub.
+
+The repository includes `data/splits.csv`, which contains the image metadata and train/validation/test split assignments.
+
+## Data split
+
+The data is divided into:
+
+- 70% training data
+- 15% validation data
+- 15% test data
+
+The split is stratified by class, grouped by lesion ID, and uses random seed 42.
+
+The split contains:
+
+- Training: 6,984 images
+- Validation: 1,524 images
+- Test: 1,507 images
+
+## Validation metric
+
+The single validation metric is rare-class macro-F1:
+
+```text
+(F1 vascular lesions + F1 dermatofibroma) / 2
+````
+
+This metric gives equal importance to the two rarest classes.
+
+## Repository contents
+
+* `notebooks/HAM100_data_inspection.ipynb`: Dataset inspection and split generation
+* `figures/sample_grid.png`: Representative samples from all seven classes
+* `figures/class_distribution.png`: Class-frequency distribution
+* `data/splits.csv`: Image split assignments
+* `proposal/project_proposal.pdf`: Project proposal
