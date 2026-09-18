@@ -87,8 +87,10 @@ Milestone-1-Project-Proposal-and-Experimental-Plan
 ├── figures/
 │   ├── sample_grid.png
 │   └── class_distribution.png
-├── data/
-│   └── splits.csv
+├──data/
+│   ├── train.csv
+│   ├── validation.csv
+│   └── test.csv
 └── proposal/
     └── project_proposal.pdf
 ```
