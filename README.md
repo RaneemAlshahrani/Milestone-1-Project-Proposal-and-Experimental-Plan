@@ -30,9 +30,8 @@ The project uses the HAM10000 dataset.
 - License: CC BY-NC-SA 4.0
 - Use: Non-commercial use only
 
-The dataset images are not included in this repository. They are downloaded automatically in the notebook using KaggleHub.
-
 The repository includes `data/train.csv`, `data/validation.csv`, and `data/test.csv`, which contain the image metadata for the training, validation, and test sets.
+
 ## Data split
 
 The data is divided into:
