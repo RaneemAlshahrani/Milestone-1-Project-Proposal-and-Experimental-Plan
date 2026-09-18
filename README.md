@@ -32,8 +32,7 @@ The project uses the HAM10000 dataset.
 
 The dataset images are not included in this repository. They are downloaded automatically in the notebook using KaggleHub.
 
-The repository includes `data/splits.csv`, which contains the image metadata and train/validation/test split assignments.
-
+The repository includes `data/train.csv`, `data/validation.csv`, and `data/test.csv`, which contain the image metadata for the training, validation, and test sets.
 ## Data split
 
 The data is divided into:
